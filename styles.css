@@ -1,0 +1,53 @@
+.container>div {
+  border: 2px solid red;
+}
+
+.sidebar>div, .header>div {
+  border: 2px solid blue;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template: 1fr 5fr / 1fr 5fr;
+}
+
+
+
+.header {
+  display: grid;
+  grid-template: 1fr 1fr /  2fr 1fr;
+  padding: 16px 48px;
+}
+
+.shareButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.sidebar {
+  align-self: flex-start;
+  grid-area: 1/1/3/2;
+  padding: 16px;
+  display: inline-grid;
+  gap: calc(16px + 5vh);
+}
+
+ul>li {
+  list-style: none;
+  padding: calc(4px + 1vh) 0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
