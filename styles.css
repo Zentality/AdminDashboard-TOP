@@ -1,11 +1,11 @@
-.sidebar>div, .header>div, li, .content div {
+.header>div, .header li, .content div {
   border: 2px solid blue;
 }
 
 :root {
   --light-background: #eff6ff;
   --medium-background: #dbeafe;
-  --dark-background: #60a5fa;
+  --dark-background: #3b82f6;
 }
 
 
@@ -14,6 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 h2{
@@ -60,11 +61,35 @@ body {
   padding: 16px;
   display: inline-grid;
   gap: calc(16px + 5vh);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background-color: var(--dark-background);
+  border-radius: 16px 0 0 16px;
 }
 
-ul>li {
-  list-style: none;
+.logo {
   padding: calc(4px + 1vh) 0;
+  display: flex;
+  align-items: center;
+  font-size: calc(1.8rem + 0.5vw);
+}
+
+.sidebar ul>li {
+  padding: calc(2px + 0.8vh) 0;
+  display: flex;
+  align-items: center;
+  font-size: calc(1rem + 0.3vw);
+}
+
+.sidebar img {
+  height: calc(8px + 1.5vw);
+  filter: invert(100%);
+  padding: 2px 8px 2px 2px;
+}
+
+.sidebar>.logo>img {
+  height: calc(12px + 2vw);
 }
 
 
