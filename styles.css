@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .header>div, .header li, .content div {
   border: 2px solid blue;
 }
@@ -6,6 +8,7 @@
   --light-background: #f8fbff;
   --medium-background: #dbeafe;
   --dark-background: #3b82f6;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -15,6 +18,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  font-family: inherit;
 }
 
 a:hover {
@@ -80,6 +84,23 @@ body {
 
 .search input:hover {
   box-shadow: 0 0 4px grey;
+}
+
+.alerts {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2vw;
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+.alerts .profilePicture {
+  margin: 0 48px;
+  height: 40px;
+  width: 40px;
+  background-color: purple;
+  border-radius: 20px;
 }
 
 .shareButtons {
