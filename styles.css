@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.content div {
+.announcements li {
   border: 2px solid blue;
 }
 
@@ -192,17 +192,41 @@ body {
   gap: 32px;
   background-color: rgb(210, 210, 230);
   border-radius: 0 0 16px 0;
+  box-shadow: inset 0 8px 5px -5px rgb(158, 158, 158);
 }
 
 .projects {
   grid-area: 1/1/3/2;
-  
 }
 
 .projects>ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px;
+}
+
+.project {
+  background-color: var(--light-background);
+  border-radius: 16px;
+  box-shadow: 2px 2px 8px 1px gray;
+  padding: 2vh 1.5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectTitle {
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.projectIcons {
+  margin-top: auto;
+  text-align: end;
+}
+
+.projectIcons a {
+  padding: 0 3%;
 }
 
 .announcements, .projects, .trending {
