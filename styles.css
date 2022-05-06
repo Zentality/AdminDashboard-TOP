@@ -3,7 +3,7 @@
 }
 
 :root {
-  --light-background: #eff6ff;
+  --light-background: #f8fbff;
   --medium-background: #dbeafe;
   --dark-background: #3b82f6;
 }
@@ -15,6 +15,10 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+}
+
+a:hover {
+  transform: scale(1.02);
 }
 
 h2{
@@ -44,8 +48,38 @@ body {
   display: grid;
   grid-template: 1fr 1fr /  2fr 1fr;
   padding: 16px 48px;
-  background-color: var(--medium-background);
+  background-color: var(--light-background);
   border-radius: 0 16px 0 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search img {
+  position: relative;
+  top: 0.3vh;
+  height: calc(24px + 1vh);
+}
+
+.search input {
+  margin: 0 1vw;
+  padding: 0 8px;
+  width: 25vw;
+  height: calc(24px + 0.5vh);
+  border-radius: 100vh;
+  border: none;
+  background-color: rgb(220, 220, 235);
+}
+
+.search input:focus-visible {
+  outline: none;
+  box-shadow: 0 0 4px grey;
+}
+
+.search input:hover {
+  box-shadow: 0 0 4px grey;
 }
 
 .shareButtons {
@@ -105,7 +139,7 @@ body {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 32px;
-  background-color: var(--medium-background);
+  background-color: rgb(210, 210, 230);
   border-radius: 0 0 16px 0;
 }
 
