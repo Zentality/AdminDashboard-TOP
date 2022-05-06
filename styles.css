@@ -35,6 +35,7 @@ body {
   background-color: var(--dark-background);
   border-radius: 16px;
   border: 2px solid var(--dark-background);
+  box-shadow: 2px 2px 8px 2px grey;
 }
 
 
@@ -90,6 +91,11 @@ body {
 
 .sidebar>.logo>img {
   height: calc(12px + 2vw);
+}
+
+.sidebar a:visited, .sidebar a:link {
+  text-decoration: none;
+  color: white;
 }
 
 
